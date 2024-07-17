@@ -1,0 +1,29 @@
+﻿@model List<ReadDB.Models.YourModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h2>Tulio Lima, 200555528</h2>
+    <h1>Product List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.pid</td>
+                    <td>@item.productname</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
